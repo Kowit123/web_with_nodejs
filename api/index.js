@@ -1,11 +1,15 @@
 const express = require(`express`); //เรียกใช้ express
+const path = require(`path`);//เรียกใช้ path
 const myApp =  express();//เก็บ express
-const path = require(`path`);
+const ejs = require(`ejs`);
 const port = 3000;
+
+myApp.use(express.static('public'));
+myApp.set(`view engine`,`ejs`); 
 
 myApp.get(`/`, (req,res)=>{
     
-    res.send(`hello world`);
+    res.render(`home`,{title: "หน้าแรก"});
 
 });
 
