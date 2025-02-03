@@ -7,11 +7,38 @@ const port = 3000;
 myApp.use(express.static('public'));
 myApp.set(`view engine`,`ejs`); 
 
+
 myApp.get(`/`, (req,res)=>{
     
     res.render(`home`,{title: "หน้าแรก"});
 
 });
+
+myApp.get(`/about`, (req,res)=>{
+
+    res.render(`about`, {title: "ประวัติ"});
+
+})
+
+myApp.get(`/archive`, (req,res)=>{
+    
+    res.render(`archive`, {title: "ผลงาน"});
+
+});
+
+myApp.get(`/activity`, (req,res)=>{
+    
+    res.render(`activity`, {title: "กิจกรรม"});
+
+});
+
+myApp.get(`/contact`, (req,res)=>{
+    
+    res.render(`contact`, {title: "ติดต่อ"});
+
+});
+
+
 
 myApp.listen(port,() => {
 
@@ -21,4 +48,3 @@ myApp.listen(port,() => {
 
 const app = myApp;
 module.exports = app;
-

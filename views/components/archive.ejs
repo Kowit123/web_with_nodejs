@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/download.png">
+    <title><%= title %></title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(246, 243, 225);
+        }
+        
+        .container {
+            flex: 1; /* ทำให้ container ขยายเต็มพื้นที่ที่เหลือ */
+            position: relative;
+            display: flex;
+            margin-bottom: 50px;
+            height: 340vh;
+
+        }
+
+        .cer {
+            margin-top: 5%;
+            position: absolute;
+            background-color: rgb(235, 183, 40);
+            width: 70%;
+            padding: 5% 0 5% 0;
+            border-radius: 40px;
+            z-index: 1;
+            margin-left: 15.3%;
+        }
+
+        .hc {
+            position: absolute;
+            text-align: center;
+            height: 70px;
+            width: 300px;
+            background-color: rgb(157, 113, 57);
+            color: aliceblue;
+            border-radius: 5px;
+            margin: 30px;
+            margin-left: 40%;
+            align-items: center;
+            padding: 15px;
+            z-index: 2;
+        }
+
+        .card {
+            justify-items: center;
+            margin-left: 13.5%;
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <%- include(`components/nav`) %>
+    <div class="container">
+        <div class="hc">
+            <h3>certificate</h3>
+        </div>
+        <div class="cer">
+            <div class="card" style="width: 70%;">
+                <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/wQCY7ixMoX-33633d0d13fb2d75.jpg" class="card-img-top" alt="..." width="">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 70%;">
+                <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/ynhkowH3NE-ba55c78c06bf0cd6.jpg" class="card-img-top" alt="..." width="">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 70%;">
+                <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/wemnBPaCSs-cd8abd554cdb6f6b.jpg" class="card-img-top" alt="..." width="">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 70%;">
+                <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/2vp1PqVFHQ-dcee3ed3a29ecd80.jpg" class="card-img-top" alt="..." width="">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include(`components/footer`) %>
+</body>
+</html>
