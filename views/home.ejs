@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+  <link rel="icon" type="image/x-icon" href="img/ตราวิทยาลัย-nobg.png">
+  <title><%= title %></title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main{
+      height: 70vh;
+    }
+    .welcome{
+      background-color: gray;
+      color: white;
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .descript1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30%;
+    }
+    div.scroll-container {
+  background-color: gray;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  text-align: center;
+}
+
+div.scroll-container img {
+  padding: 15px;
+}
+
+  </style>
+</head>
+<body>
+  <!--NAV-->
+  <%- include('components/nav') %>
+  <!--NAV-->
+  <main>
+    <div class="welcome">
+      <h1>WELCOME TO MY WEBSITE</h1>
+    </div>
+    <div class="descript1">
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เว็บไซต์นี้ เป็นส่วนหนึ่งวิชาการสร้างเว็บแอปพลิเคชั่น<br>จัดทำขึ้นเพื่อ ใช้ในการทดสอบความรู้ และความเข้าใจ ในรายวิชาการสร้างเว็บแอปพลิเคชั่น</p>
+    </div>
+    <div class="scroll-container">
+      <img src="img/เลือกตั้ง.jpg" alt="Cinque Terre" width="150" height="200">
+      <img src="img/ไหว้ครู.jpg" alt="Forest" width="150" height="200">
+      <img src="img/ประเมินชมรม.jpg" alt="Northern Lights" width="150" height="200">
+      <img src="img/ตอบปัญหาวิท.jpg" alt="Mountains" width="150" height="200">
+      <img src="img/comingsoon.jpg" alt="Mountains" width="150" height="200">
+      <img src="img/comingsoon.jpg" alt="Mountains" width="150" height="200">
+      <img src="img/comingsoon.jpg" alt="Mountains" width="150" height="200">
+      <img src="img/comingsoon.jpg" alt="Mountains" width="150" height="200">
+      <img src="img/comingsoon.jpg" alt="Mountains" width="150" height="200">
+    </div>
+  </main>
+  <!--FOOTER-->
+  <%- include('components/footer') %>
+  <!--FOOTER-->
+</body>
+</html>

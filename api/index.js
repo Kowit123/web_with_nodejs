@@ -4,6 +4,10 @@ const myApp =  express();//เก็บ express
 const ejs = require(`ejs`);
 const port = 3000;
 
+myApp.use(express.static(path.join(__dirname,'../public')));
+myApp.set(`view engine`, 'ejs');
+myApp.set('views', path.join(__dirname,'../views'))
+
 myApp.use(express.static('public'));
 myApp.set(`view engine`,`ejs`); 
 
