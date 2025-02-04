@@ -7,9 +7,141 @@
   <link rel="icon" type="image/x-icon" href="img/ตราวิทยาลัย-nobg.png">
   <title><%= title %></title>
 </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: gray;
+  color: white;
+}
+.aa{
+  width: 85%;
+  display: flex;
+
+  justify-self: center;
+  background-color:white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+footer {
+            bottom: 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
 <body>
   <!--NAV-->
   <%- include('components/nav') %>
   <!--NAV-->
+
+<!-- Header -->
+<div class="header">
+  <h1>ผลงานต่างๆ</h1>
+</div>
+
+<div class="aa">
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/cm3.jpg" style="width:100%; border-radius: 20px 0 0 0 ;">
+    <img src="img/comingsoon.jpg" style="width:100%">
+    <img src="img/cm2.jpg" style="width:100%">
+    <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/2vp1PqVFHQ-dcee3ed3a29ecd80.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+    <img src="img/cm2.jpg" style="width:100%; border-radius: 0px 0 0 20px ;">
+  </div>
+  <div class="column">
+    <img src="img/cm2.jpg" style="width:100%">    
+    <img src="img/comingsoon.jpg" style="width:100%">
+    <img src="img/comingsoon.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+    <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/2vp1PqVFHQ-dcee3ed3a29ecd80.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/comingsoon.jpg" style="width:100%">
+    <img src="img/cm2.jpg" style="width:100%">
+    <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/2vp1PqVFHQ-dcee3ed3a29ecd80.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+    <img src="img/cm2.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://powerclass.org/wp-content/uploads/tutor-certificates/2vp1PqVFHQ-dcee3ed3a29ecd80.jpg" style="width:100%; border-radius: 0px 20px 0 0 ;"> 
+    <img src="img/comingsoon.jpg" style="width:100%">
+    <img src="img/cm2.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+    <img src="img/cm3.jpg" style="width:100%">
+    <img src="img/cm2.jpg" style="width:100%; border-radius: 0px 0 20px 0 ;">
+  </div>
+</div>
+</div>
+
+<footer>
+  <p>&copy; 2025 KOWIT | <a href="#">นโยบายความเป็นส่วนตัว</a></p>
+</footer>
+
 </body>
 </html>
